@@ -1,7 +1,7 @@
 import { createApp } from 'vue'
 import './style.css'
 import App from './App.vue'
-
+import Router from './router'
 // Vuetify 
 import 'vuetify/styles'
 import { createVuetify } from 'vuetify'
@@ -17,6 +17,7 @@ const app = createApp(App)
 
 // app use
 app.use(vuetify)
+app.use(Router)
 
 
 // app mount
